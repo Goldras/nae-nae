@@ -4,9 +4,11 @@ var workerText = document.getElementById("WorkerAmount")
 var makingWorker = false
 var interval
 
-var Game = {workers:0}
+var Game = {workers:0,currentRoom:null}
 
 function init() {
+    Game.currentRoom = new Room(50)
+    DrawGrid()
     interval = setInterval(update,1000)
 }
 
