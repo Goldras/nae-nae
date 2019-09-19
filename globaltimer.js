@@ -21,7 +21,7 @@ function globalTimer(){
     }
 }
 }
-    timerText.innerHTML = `You have played (Name of game goes here) for $[years] years, $[days] days, $[hours] hours, $[minutes] minutes, and [$second] seconds!`
+    timerText.innerHTML = `You have played (Name of game goes here) for ${years} years, ${days} days, ${hours} hours, ${minutes} minutes, and ${second} seconds!`
      second ++
     
  }
