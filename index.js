@@ -1,13 +1,23 @@
 //Constants
-var coinText = document.getElementById("coinText")
+var workerText = document.getElementById("WorkerAmount")
 
-var coins = 0
+var workers = 0
+var interval
+
+function init() {
+    interval = setInterval(update,1000)
+}
 
 function update() {
-    coins++
-    updateCoins()
+    updateWorkers()
 }
 
-function updateCoins() {
-    coinText.innerHTML = "Coins: " + coins
+function incrementWorkers() {
+    workers++
+    updateText()
 }
+function updateText() {
+    workerText.innerHTML = workers + " Workers."
+}
+
+window.onload = init
