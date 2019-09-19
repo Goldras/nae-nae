@@ -1,9 +1,8 @@
 var x = 0
 function coolsauce(){
-x += 0.001
-console.log(x);
+x += 1
+if(x > Number.MAX_SAFE_INTEGER){
+    x = infinity
+  }
 }
 setInterval(coolsauce, 10);
-if(x > maxSafeInteger){
-  x = infinity
-}
