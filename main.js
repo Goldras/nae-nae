@@ -1,0 +1,1 @@
+setInterval(coolsauce, 10);
