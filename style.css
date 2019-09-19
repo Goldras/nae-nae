@@ -57,5 +57,6 @@ button {
     height:30px;
     border-style:solid;
     bottom:0;
-    background-color:gray
+    background-color:gray;
+    position:absolute; 
 }
