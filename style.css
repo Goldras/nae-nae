@@ -1,5 +1,5 @@
 body {
-    background: salmon;
+    background: #1E1E1E;
 }
 button {
     border:none;
@@ -10,10 +10,13 @@ button {
 .ControlBox {
     background-color: goldenrod;
     width:200px;
-    height: 100px;
     display: flex;
     justify-content: center;
     flex-direction: column
+}
+.ControlBoxDesc {
+    color: white;
+    margin: auto;
 }
 
 .ProgressBar {
