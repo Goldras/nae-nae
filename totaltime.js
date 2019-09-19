@@ -1,4 +1,4 @@
 function coolman(){
-
+   
 }
-setInterval()
+setInterval(coolman, 1000);
