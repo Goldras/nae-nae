@@ -36,3 +36,11 @@ button {
 #Controls{
     display: flex;
 }
+#timer{
+    bottom: 0;
+    left: 0;
+    font-size: 10pt;
+    margin: auto;
+    color: rgba(168, 206, 200, 0.5);
+    position: absolute;
+}
