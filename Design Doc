@@ -12,6 +12,6 @@ with a bit of investment, a building with a limited radius.
 
 Upgrades should follow the same principle; outside of prestige upgrades, or additions to the buildings themselves, any upgrades given
 should be a limited resource that also has to be produced. For example, if you want to upgrade worker lifespan, you have to deliver a 
-resource to a worker-factory, which has a limited amount of uses. Each time a worker is created, the stack is reduced by one, with the 
-worker having an increased lifespan. Basic worker upgrades should include resource collection speed, lifespan, and movement speed, but
+resource to a worker-factory, which has a limited amount of uses; each time a worker is created, the stack is reduced by one, with the 
+worker having an increased lifespan in exchange for the consumption of the resource. Basic worker upgrades should include resource collection speed, lifespan, and movement speed, but
 more can be added as we figure things out.
