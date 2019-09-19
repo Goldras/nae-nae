@@ -1,3 +1,4 @@
+var timerText = document.getElementById("timer")
 var second = 0
 var minutes = 0
 var hours = 0
@@ -20,8 +21,9 @@ function globalTimer(){
     }
 }
 }
-     console.log([second, minutes, hours, days, years]);
+    timerText.innerHTML = `You have played (Name of game goes here) for $[years] years, $[days] days, $[hours] hours, $[minutes] minutes, and [$second] seconds!`
      second ++
+    
  }
 
 setInterval(globalTimer, 1000);
