@@ -51,4 +51,7 @@ button {
     margin: auto;
     color: rgb(21, 194, 168);
     position: absolute;
+    background-color: wheat;
+    padding-top: 10px;
+    padding-right: 10px;
 }
