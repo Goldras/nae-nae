@@ -1,7 +1,5 @@
 //Constants
-var canvas = document.getElementById("canvas")
 var workerText = document.getElementById("WorkerAmount")
-var ctx = canvas.getContext("2d")
 
 var makingWorker = false
 var interval
@@ -20,7 +18,11 @@ function incrementWorkers(n) {
     updateText()
 }
 function updateText() {
-    workerText.innerHTML = Game.workers + " Workers."
+    if(Game.workers < 2) {
+      workerText.innerHTML = Game.workers + " Worker."
+    } else {
+      workerText.innerHTML = Game.workers + " Workers." 
+    }
 }
 
 function makeWorker() {
