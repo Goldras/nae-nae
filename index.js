@@ -9,11 +9,11 @@ function init() {
 }
 
 function update() {
-    updateWorkers()
+    incrementWorkers(1)
 }
 
-function incrementWorkers() {
-    workers++
+function incrementWorkers(n) {
+    workers += n
     updateText()
 }
 function updateText() {
