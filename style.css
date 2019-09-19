@@ -1,3 +1,31 @@
 body {
     background: salmon;
 }
+button {
+    border:none;
+    color: white;
+    background-color: black;
+}
+
+.ControlBox {
+    background-color: goldenrod;
+    width:200px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column
+}
+
+.ProgressBar {
+    width:90%;
+    border-style: solid;
+    border-width: 1px;
+    background-color: white;
+    margin:auto;
+}
+.Progress {
+    width:0%;
+    height:20px;
+    background-color: blue;
+    color: white;
+}
