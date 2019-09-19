@@ -1,6 +1,6 @@
 var x = 0
 function coolsauce(){
-x += 0.001
+x += 1
 console.log(x);
 }
 setInterval(coolsauce, 10);
