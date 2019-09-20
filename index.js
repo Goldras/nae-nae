@@ -37,10 +37,10 @@ function updateResourceText(){
 
 }
 function updateLoadedWorkers(){
-  if(Game.loadedWorkers == 1) {
-    housedWorkerText.innerHTML = Game.loadedWorkers + " Housed Worker."
+  if(Game.maxWorkers == 1) {
+    housedWorkerText.innerHTML = Game.loadedWorkers + "/" + Game.maxWorkers + " Housed Worker."
   } else {
-    housedWorkerText.innerHTML = Game.loadedWorkers + " Housed Workers." 
+    housedWorkerText.innerHTML = Game.loadedWorkers + "/" + Game.maxWorkers + " Housed Workers."
   }
 
 }
