@@ -5,13 +5,13 @@ var minWorkers = 1
 var resourceOutput = 1
 
 function loadWorkers(){
- if(workers == 0){
+ if(Game.workers == 0){
      //put quirky output message here
  }else if(loadedWorkers >= maxWorkers){
      //put quirky output here
  }else{
-     workers --
-     loadedWorkers ++
+     Game.workers--
+     loadedWorkers++
      incrementWorkers(-1)
  }
 }

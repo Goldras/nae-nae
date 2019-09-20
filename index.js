@@ -32,7 +32,7 @@ function updateResourceText(){
 
 }
 function updateText() {
-    if(Game.workers < 2) {
+    if(Game.workers == 1) {
       workerText.innerHTML = Game.workers + " Worker."
     } else {
       workerText.innerHTML = Game.workers + " Workers." 
