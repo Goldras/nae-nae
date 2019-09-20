@@ -24,6 +24,5 @@ function slaveLabor(){
         incrementResources(resourceOutput)
     }
 }
-function incrementResources(n){
 
 }
