@@ -11,7 +11,7 @@ function loadWorkers(){
      //put quirky output here
  }else{
     incrementWorkers(-1)
-    incrementLoadedWorkers(1)
+    incrementLoadedWorkers(minWorkers)
  }
 }
 
@@ -23,3 +23,4 @@ function slaveLabor(){
         incrementResources(resourceOutput)
     }
 }
+
