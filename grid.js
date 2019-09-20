@@ -4,16 +4,16 @@ var ctx = canvas.getContext("2d")
 var shapes = {
     triangle: function(x,y,color) {
         var size = Game.currentRoom.cellSize
-        var base = size / 2
+        var base = size / 3
         var bX = x * size
         var bY = y * size
         console.log(bX)
         console.log(bY)
         ctx.beginPath()
-        ctx.strokeStyle = color
+        ctx.fillStyle = color
         ctx.moveTo(bX+base, bY)
-        ctx.lineTo(bX-base, bY+base)
-        ctx.lineTo(bX-base, bY-base)
+        ctx.lineTo(bX-base, bY)
+        ctx.lineTo(bX, bY-base)
         ctx.fill()
     }
 }
