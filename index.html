@@ -13,8 +13,11 @@
             </div>
             <canvas id="canvas" width="500px" height="500px"></canvas>
             <h1 id="WorkerAmount">0 Workers.</h1>
+            <h2 id="ResourceAmount">0 Resources.</h2>
             <div id="Controls">
-                <div>
+                <div id="makeResources" class="ControlBox">
+                    <button onclick="loadWorkers()">House your workers.</button>
+                    <button onclick="slaveLabor()">Kill your workers for resources :).</button>
                 </div>
                 <div id="makeWorker" class="ControlBox">
                     <button onclick="makeWorker()">Make Worker</button>
