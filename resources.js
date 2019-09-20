@@ -19,8 +19,7 @@ function slaveLabor(){
     if(loadedWorkers < minWorkers){
         //put quirky output message here
     }else{
-        loadedWorkers = loadedWorkers - minWorkers
-        resource1 = resource1 + resourceOutput
+        incrementLoadedWorkers(-1)
         incrementResources(resourceOutput)
     }
 }
