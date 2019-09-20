@@ -41,6 +41,6 @@ function globalTimer(){
 }
     
  
-
-setInterval(globalTimer, 1000);
 }
+setInterval(globalTimer, 1000);
+
