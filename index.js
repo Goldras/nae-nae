@@ -1,5 +1,6 @@
 //Constants
 var workerText = document.getElementById("WorkerAmount")
+var resourceText = document.getElementById("ResourceAmount")
 
 var makingWorker = false
 var interval
@@ -14,10 +15,21 @@ function init() {
 
 function update() {
 }
-
+function incrementResources(n){
+  Game.resources += n
+  updateResourceText()
+}
 function incrementWorkers(n) {
     Game.workers += n
     updateText()
+}
+function updateResourceText(){
+  if(Game.resources < 2) {
+    resourceText.innerHTML = Game.resources + " Resource."
+  } else {
+    resourceText.innerHTML = Game.resources + " Resources." 
+  }
+
 }
 function updateText() {
     if(Game.workers < 2) {
