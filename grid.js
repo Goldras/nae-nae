@@ -38,7 +38,7 @@ function generateGrid(size) {
 class Room {
     constructor(size) {
         this.grid = generateGrid(size)
-        this.cellSize = canvas.height / size
+        this.cellSize = canvas.width / size
     }
 }
 function DrawGrid() {
