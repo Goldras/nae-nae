@@ -1,6 +1,7 @@
 //Constants
 var workerText = document.getElementById("WorkerAmount")
 var resourceText = document.getElementById("ResourceAmount")
+var housedWorkerText = document.getElementById("HousedWorkers")
 
 var makingWorker = false
 var interval
@@ -23,11 +24,23 @@ function incrementWorkers(n) {
     Game.workers += n
     updateText()
 }
+function incrementLoadedWorkers(n) {
+  Game.loadedWorkers += n
+  updateLoadedWorkers
+}
 function updateResourceText(){
   if(Game.resources < 2) {
     resourceText.innerHTML = Game.resources + " Resource."
   } else {
     resourceText.innerHTML = Game.resources + " Resources." 
+  }
+
+}
+function updateHousedWorkers(){
+  if(Game.loadedWorkers < 2) {
+    housedWorkerText.innerHTML = Game.loadedWorkers + " Housed Worker."
+  } else {
+    housedWorkerText.innerHTML = Game.loadedWorkers + " Housed Workers." 
   }
 
 }
