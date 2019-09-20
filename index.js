@@ -5,7 +5,7 @@ var resourceText = document.getElementById("ResourceAmount")
 var makingWorker = false
 var interval
 
-var Game = {workers:0,currentRoom:null}
+var Game = {workers:0,resources:0,currentRoom:null}
 
 function init() {
     Game.currentRoom = new Room(50)
