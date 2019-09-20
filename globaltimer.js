@@ -20,10 +20,27 @@ function globalTimer(){
         }
     }
 }
-}
+}   if(second == 1){
+    timerText.innerHTML = `You have played (Name of game goes here) for ${years} years, ${days} days, ${hours} hours, ${minutes} minutes, and ${second} second!`
+    second++
+    }else if(minutes == 1){
+    timerText.innerHTML = `You have played (Name of game goes here) for ${years} years, ${days} days, ${hours} hours, ${minutes} minute, and ${second} seconds!`
+    second++
+    }else if(hours == 1){
+    timerText.innerHTML = `You have played (Name of game goes here) for ${years} years, ${days} days, ${hours} hour, ${minutes} minutes, and ${second} seconds!`
+    second++
+    }else if(days == 1){
+    timerText.innerHTML = `You have played (Name of game goes here) for ${years} years, ${days} day, ${hours} hours, ${minutes} minutes, and ${second} seconds!` 
+    second++   
+    }else if(years == 1){
+    timerText.innerHTML = `You have played (Name of game goes here) for ${years} year, ${days} days, ${hours} hours, ${minutes} minutes, and ${second} seconds!`
+    second++
+    }else{
     timerText.innerHTML = `You have played (Name of game goes here) for ${years} years, ${days} days, ${hours} hours, ${minutes} minutes, and ${second} seconds!`
      second ++
+}
     
- }
-
+ 
+}
 setInterval(globalTimer, 1000);
+
