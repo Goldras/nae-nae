@@ -37,15 +37,17 @@ button {
     height:30px;
     width:30px;
     background-color:rgb(46, 46, 46);
-    border-style: solid;
-    border-color: rgb(0, 0, 0);
     position:absolute;
 }
 .CornerBox:nth-child(1){
+    border-left: solid black;
+    border-bottom: solid black;
     top:0;
     right:0;
 }
 .CornerBox:nth-child(2){
+    border-bottom: solid black;
+    border-right: solid black;
     top:0;
     left:0;
 }
