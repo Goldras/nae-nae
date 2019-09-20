@@ -33,6 +33,26 @@ button {
     background-color: blue;
     color: white;
 }
+.CornerBox{
+    height:30px;
+    width:30px;
+    background-color:rgb(46, 46, 46);
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    position:absolute;
+    bottom:0;
+    left:0;
+}
+.CornerBox:nth-child(1){
+   right:0;
+}
+.CornerBox:nth-child(1){
+    top:0;
+}
+.CornerBox:nth-child(1){
+    top:0;
+    right:0;
+}
 #Controls{
     width: 50%;
     height: 50%;
