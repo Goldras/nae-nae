@@ -43,3 +43,4 @@ function globalTimer(){
  
 
 setInterval(globalTimer, 1000);
+}
