@@ -16,11 +16,10 @@ function loadWorkers(){
 }
 
 function slaveLabor(){
-    if(loadedWorkers < minWorkers){
+    if(Game.loadedWorkers < minWorkers){
         //put quirky output message here
     }else{
-        loadedWorkers = loadedWorkers - minWorkers
-        resource1 = resource1 + resourceOutput
+        incrementLoadedWorkers(-minWorkers)
         incrementResources(resourceOutput)
     }
 }

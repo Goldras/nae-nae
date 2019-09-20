@@ -6,7 +6,7 @@ var housedWorkerText = document.getElementById("HousedWorkers")
 var makingWorker = false
 var interval
 
-var Game = {workers:0,resources:0,currentRoom:null}
+var Game = {workers:0,resources:0,loadedWorkers:0,currentRoom:null}
 
 function init() {
     Game.currentRoom = new Room(20)
@@ -26,18 +26,18 @@ function incrementWorkers(n) {
 }
 function incrementLoadedWorkers(n) {
   Game.loadedWorkers += n
-  updateLoadedWorkers
+  updateLoadedWorkers()
 }
 function updateResourceText(){
-  if(Game.resources < 2) {
+  if(Game.resources == 1) {
     resourceText.innerHTML = Game.resources + " Resource."
   } else {
     resourceText.innerHTML = Game.resources + " Resources." 
   }
 
 }
-function updateHousedWorkers(){
-  if(Game.loadedWorkers < 2) {
+function updateLoadedWorkers(){
+  if(Game.loadedWorkers == 1) {
     housedWorkerText.innerHTML = Game.loadedWorkers + " Housed Worker."
   } else {
     housedWorkerText.innerHTML = Game.loadedWorkers + " Housed Workers." 
