@@ -38,9 +38,10 @@ function updateResourceText(){
 }
 function updateLoadedWorkers(){
   if(Game.maxWorkers == 1) {
-    housedWorkerText.innerHTML = Game.loadedWorkers + "/" + Game.maxWorkers + " Housed Worker."
+    //Question for MinecraftMan: how does "Game." work? Where is that polling from? And, if I were to want to specify maxWorkers, what would I need to put instead?
+    housedWorkerText.innerHTML = Game.loadedWorkers + " / " + Game.maxWorkers + " Housed Worker."
   } else {
-    housedWorkerText.innerHTML = Game.loadedWorkers + "/" + Game.maxWorkers + " Housed Workers."
+    housedWorkerText.innerHTML = Game.loadedWorkers + " / " + Game.maxWorkers + " Housed Workers."
   }
 
 }
