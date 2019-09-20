@@ -3,12 +3,17 @@ var ctx = canvas.getContext("2d")
 
 var shapes = {
     triangle: function(x,y,color) {
-        var base = Game.currentRoom.size / 2
+        var size = Game.currentRoom.cellSize
+        var base = size / 2
+        var bX = x * size
+        var bY = y * size
+        console.log(bX)
+        console.log(bY)
         ctx.beginPath()
         ctx.strokeStyle = color
-        ctx.moveTo(x, y)
-        ctx.lineTo(x+base, y+base)
-        ctx.lineTo(x+base, y-base)
+        ctx.moveTo(bX+base, bY)
+        ctx.lineTo(bX-base, bY+base)
+        ctx.lineTo(bX-base, bY-base)
         ctx.fill()
     }
 }
@@ -24,10 +29,7 @@ function generateGrid(size) {
     for(var i=0;i<size;i++) {
         grid[i] = []
         for(var j=0;j<size;j++) {
-            grid[i][j] = new Cell(i,j)
-            if(i == 3 && j == 3) {
-                grid[i][j] = new Cell(i,j,new GridObject(shapes.triangle,"#ff0000"))
-            }
+            grid[i][j] = new Cell(i,j,new GridObject(shapes.triangle,"#ff0000"))
         }
     }
     return grid
