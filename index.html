@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div id="game" >
+            <div id="settingsbar">
+                <p id="timer">
+
+                </p>
+            </div>
+            <canvas id="canvas" width="500px" height="500px"></canvas>
+            <h1 id="WorkerAmount">0 Workers.</h1>
+            <div id="Controls">
+                <div id="makeWorker" class="ControlBox">
+                    <button onclick="makeWorker()">Make Worker</button>
+                    <p class="ControlBoxDesc">1 worker / 5 seconds</p>
+                    <div class="ProgressBar">
+                        <div class="Progress" id="WorkerProgress"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="index.js"></script>
+        <script src="globaltimer.js"></script>
+        <script src="grid.js"></script>
+    </body>
+</html>
