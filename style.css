@@ -45,12 +45,15 @@ button {
     display: flex;
 }
 #timer{
+    display: inline-block;
     bottom: 0;
     left: 0;
-    font-size: 20px;
-    margin: auto;
+    font-size: 2vw;
+    margin: 0 auto;
     color: rgb(21, 194, 168);
     position: absolute;
+    font-variant-numeric: tabular-nums;
+    overflow: hidden;
 }
 #settingsbar{
     width:100%;
@@ -60,6 +63,15 @@ button {
     left:0;
     right:0;
     margin:auto;
+    position: fixed;
+    background-color:gray;
+    text-align: justify;
+}
+#canvas {
     position: absolute;
-    background-color:gray
+    bottom:0;
+    left:0;
+    right:0;
+    margin: auto;
+    margin-bottom: 35px;
 }

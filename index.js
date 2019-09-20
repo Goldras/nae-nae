@@ -9,6 +9,7 @@ var interval
 var Game = {workers:0,resources:0,loadedWorkers:0,currentRoom:null}
 
 function init() {
+    globalTimer()
     Game.currentRoom = new Room(20)
     DrawGrid()
     interval = setInterval(update,1000)

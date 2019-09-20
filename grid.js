@@ -4,7 +4,7 @@ var ctx = canvas.getContext("2d")
 var shapes = {
     triangle: function(x,y,color) {
         var size = Game.currentRoom.cellSize
-        var base = size / 3
+        var base = size / 2.5
         var bX = x * size
         var bY = y * size
         console.log(bX)
@@ -38,7 +38,7 @@ function generateGrid(size) {
 class Room {
     constructor(size) {
         this.grid = generateGrid(size)
-        this.cellSize = canvas.width / size
+        this.cellSize = canvas.height / size
     }
 }
 function DrawGrid() {
