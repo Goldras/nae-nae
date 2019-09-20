@@ -10,9 +10,8 @@ function loadWorkers(){
  }else if(loadedWorkers >= maxWorkers){
      //put quirky output here
  }else{
-     Game.workers--
-     loadedWorkers++
-     incrementWorkers(-1)
+    incrementWorkers(-1)
+    loadedWorkers++
  }
 }
 function slaveLabor(){
