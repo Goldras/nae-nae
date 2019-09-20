@@ -4,6 +4,9 @@ class GridObject {
         this.color = color;
     }
 }
-class Player {
-    
+
+class Worker {
+    constructor() {
+        this.GridObject = new GridObject(shapes.triangle,"#ff0000")
+    }
 }
