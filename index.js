@@ -77,3 +77,8 @@ function makeWorker() {
 }
 
 window.onload = init
+
+window.addEventListener("resize", function() {
+  updateCellSize()
+  DrawGrid()
+})

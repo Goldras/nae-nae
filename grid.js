@@ -4,16 +4,16 @@ var ctx = canvas.getContext("2d")
 var shapes = {
     triangle: function(x,y,color) {
         var size = Game.currentRoom.cellSize
-        var base = size / 2.5
+        var base = size / 3
         var bX = x * size
         var bY = y * size
         console.log(bX)
         console.log(bY)
         ctx.beginPath()
         ctx.fillStyle = color
-        ctx.moveTo(bX+base, bY)
-        ctx.lineTo(bX-base, bY)
-        ctx.lineTo(bX, bY-base)
+        ctx.moveTo(bX-base, bY)
+        ctx.lineTo(bX+base, bY+base)
+        ctx.lineTo(bX+base, bY-base)
         ctx.fill()
     }
 }
@@ -38,9 +38,15 @@ function generateGrid(size) {
 class Room {
     constructor(size) {
         this.grid = generateGrid(size)
+        this.size = size
         this.cellSize = canvas.width / size
     }
 }
+
+function updateCellSize() {
+    Game.currentRoom.cellSize = canvas.width / Game.currentRoom.size
+}
+
 function DrawGrid() {
     ctx.fillStyle = "#000000"
     ctx.fillRect(0,0,canvas.width,canvas.height)

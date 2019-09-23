@@ -1,6 +1,7 @@
 body {
     background: #1E1E1E;
 }
+
 button {
     border:none;
     color: white;
@@ -38,14 +39,15 @@ button {
     width:30px;
     background-color:rgb(46, 46, 46);
     position:absolute;
+    margin: auto;
 }
-.CornerBox:nth-child(1){
+.CornerBox:nth-child(1) {
     border-left: solid black;
     border-bottom: solid black;
     top:0;
     right:0;
 }
-.CornerBox:nth-child(2){
+.CornerBox:nth-child(2) {
     border-bottom: solid black;
     border-right: solid black;
     top:0;
@@ -93,3 +95,20 @@ button {
     top:0;
     margin: auto;
 }
+#top, #bottom, #left, #right {
+	background: #a5ebff;
+	position: fixed;
+	}
+	#left, #right {
+		top: 0; bottom: 0;
+		width: 1vw;
+		}
+		#left { left: 0; }
+		#right { right: 0; }
+		
+	#top, #bottom {
+		left: 0; right: 0;
+		height: 1vw;
+		}
+		#top { top: 0; }
+        #bottom { bottom: 0; }
