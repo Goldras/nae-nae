@@ -1,5 +1,6 @@
 body {
     background: #1E1E1E;
+    margin: 0;
 }
 
 button {
@@ -10,7 +11,8 @@ button {
 }
 
 .ControlBox {
-    background-color: goldenrod;
+    background-color: rgb(50, 50, 50);
+    height: 100%;
     width:200px;
     display: flex;
     justify-content: center;
@@ -34,33 +36,31 @@ button {
     background-color: blue;
     color: white;
 }
-.CornerBox{
-    height:30px;
-    width:30px;
+#CornerBoxUpperLeft, #CornerBoxUpperRight {
+    height: 25px;
+    width: 25px;
     background-color:rgb(46, 46, 46);
-    position:absolute;
+    position: fixed;
     margin: auto;
+    z-index: 1000;
 }
-.CornerBox:nth-child(1) {
+#CornerBoxUpperLeft {
     border-left: solid black;
     border-bottom: solid black;
     top:0;
     right:0;
 }
-.CornerBox:nth-child(2) {
+#CornerBoxUpperRight {
     border-bottom: solid black;
     border-right: solid black;
     top:0;
     left:0;
 }
 #Controls{
+
     width: 50%;
-    height: 50%;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    height: 100%;
+    float: left;
     margin: auto;
     display: flex;
 }
@@ -68,12 +68,14 @@ button {
     display: inline-block;
     bottom: 0;
     left: 0;
-    font-size: 2vw;
+    font-size: 1.5em;
     margin: 0 auto;
     color: rgb(21, 194, 168);
     position: absolute;
     font-variant-numeric: tabular-nums;
     overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 #settingsbar{
     width:100%;
@@ -96,19 +98,30 @@ button {
     margin: auto;
 }
 #top, #bottom, #left, #right {
-	background: #a5ebff;
-	position: fixed;
-	}
-	#left, #right {
-		top: 0; bottom: 0;
-		width: 1vw;
-		}
-		#left { left: 0; }
-		#right { right: 0; }
-		
-	#top, #bottom {
-		left: 0; right: 0;
-		height: 1vw;
-		}
-		#top { top: 0; }
-        #bottom { bottom: 0; }
+    margin:auto;
+    background-color: rgb(46, 46, 46);
+    border-color: #000000;
+    position: fixed;
+    box-sizing: border-box;
+}
+#left, #right {
+	top: 0; bottom: 0;
+    width: 15px;
+}
+#left { left: 0; border-right: solid;}
+#right { right: 0; border-left: solid;}
+	
+#top {
+	left: 0; right: 0;
+    height: 15px;
+}
+#top { top: 0; border-bottom: solid;}
+
+#game {
+    position: absolute;
+    padding: 15px;
+    padding-bottom: 30px;
+    margin: 0;
+
+    top:0;left:0;right:0;bottom:0;
+}

@@ -74,3 +74,4 @@ function drawCell(cell) {
         cell.object.shape(cell.x,cell.y,cell.object.color)
     }
 }
+
